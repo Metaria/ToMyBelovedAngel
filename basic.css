@@ -1,0 +1,196 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(105deg, #FFF5F5, #F7D6D0, #E2B4BD, #4A4A4A);
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.Box {
+    width: 20vw;
+    height: 20vh;
+    background-color: wheat;
+    position: absolute;
+    left: 45vw;
+    top: 45vh;
+    border-radius: 10px;
+    animation: Move ease 2s infinite
+}
+
+
+.Heart {
+    font-size: 20vh;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    background: none;
+    border: none;
+
+}
+
+.PickableBOX {
+    font-size: 10vh;
+    background: none;
+    border: none;
+}
+
+.Heart:hover {
+    animation: Heartbeat 0.5s ease infinite;
+}
+
+
+#Quadrant1 {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+
+}
+
+#Quadrant2 {
+    position: absolute;
+    right: 25%;
+    top: 25%;
+
+}
+
+#Quadrant3 {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+
+}
+
+#Quadrant4 {
+    position: absolute;
+    right: 25%;
+    bottom: 25%;
+
+}
+
+.PickableBOX:hover {
+    animation: Heartbeat ease 0.5s infinite;
+}
+
+
+#Return {
+    font-size: 5vh;
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    background: green;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#Return:hover {
+    animation: Heartbeat ease 0.5s infinite;
+}
+
+.Shatterwithlove {
+    font-size: large;
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    color: #E11A45;
+    width: 5vw;
+    border-radius: 10px;
+}
+
+#SW1 {
+    animation: AnimSW1 8s ease infinite;
+    position: absolute;
+}
+#SW2 {
+    animation: AnimSW2 0.4s ease infinite;
+    position: absolute;
+    left: 50%;
+}
+#SW3 {
+    animation: AnimSW3 0.2s ease infinite;
+    position: absolute;
+    right: 20%;
+    font-size: 30px;
+}
+#SW4 {
+    animation: AnimSW4 2s ease infinite;
+    position: absolute;
+    top: 70%;
+    font-size: 30px;
+}
+
+@keyframes AnimSW1 {
+    from {transform: translateX(-110vw);}
+    to {transform: translateX(110vw);}
+}
+@keyframes AnimSW3 {
+    from {transform: translateY(-30px);}
+    to {transform: translateY(30px);}
+}
+@keyframes AnimSW2 {
+    0% {transform: scale(1)}
+    50% {transform: scale(5)}
+    100% {transform: scale(1)}
+}
+@keyframes AnimSW4 {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+
+.loveletter {
+    visibility: hidden;
+    width: 50vw;
+    color: blue;
+    background-color: pink;
+    border-color: #EFECD7;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    position: absolute;
+    left: 25vw;
+}
+
+#Lovecss {
+    font-size: 5vh;
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    background: pink;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.Surprise {
+    visibility: visible;
+    animation: Moveleftletter ease 4s forwards;
+}
+
+
+
+@keyframes Heartbeat {
+    from {transform: scale(1);}
+    to {transform: scale(1.5);}
+    
+}
+
+@keyframes EntranceUP {
+    from {transform: translateY(200vh)}
+    to {transform: translateY(static)}
+    
+}
+
+@keyframes EntranceDOWN {
+    from {transform: translateY(-200vh)}
+    to {transform: translateY(static)}
+    
+}
+
+@keyframes Moveleftletter {
+    from {transform: translateX(3000px);}
+    to {transform: translateX(static);}
+    
+}
+
+
